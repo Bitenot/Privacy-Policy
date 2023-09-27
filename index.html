@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: left;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #DA63DE; /* Цвет рамки */
+            padding: 20px; /* Поля внутри рамки */
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .terms {
+            font-size: 14px;
+        }
+
+        .language-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .language-button {
+            padding: 10px 20px;
+            border-radius: 35%;
+            border: none;
+            background-color: #DA63DE;
+            color: white;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .language-button:hover {
+            background-color: #BA42B3;
+        }
+
+        .external-link-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            border-radius: 35%;
+            border: none;
+            background-color: #DA63DE;
+            color: white;
+            cursor: pointer;
+        }
+
+        .external-link-button:hover {
+            background-color: #BA42B3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Privacy Policy
+        </div>
+        <div class="terms" id="terms-container">
+            <!-- Первоначально текст на английском -->
+            <p>
+                The Privacy Policy explains how we collect, use, disclose, share and protect your personal information.
+            </p>
+			<p>
+			<b>1. Collection of Information</b>
+			</p>
+			<p>
+			We may collect different types of information to provide and improve our projects. This includes information you provide to us directly, as well as data about your interactions with our services. We may store information about your email as part of your account registration, to store data about your use of our apps and bots, so that you don't lose anything you've done in the course of your use. We may store your phone number if you choose to link your account to your phone. We store your password for your account on our website. ( this site is currently under development )
+			</p>
+			<p>
+			<b>2. Uses of the information</b>
+			</p>
+			<p>
+			We use the information we collect to provide, support, analyze and improve our services. We may also use this information for you personally. The information we collect helps us develop our application based on your preferences.
+			</p>
+			<p>
+			<b>3. Disclosure of information</b>
+			</p>
+			<p>
+			We do not sell, trade or share your personal information with third parties without your consent, except as described in this Privacy Policy.
+			</p>
+			<p>
+			<b>4. Security</b>
+			</p>
+			<p>
+			We take all necessary steps to ensure the security of your personal information. We provide access to some of your data only to those employees who have a business need to know it. These employees are completely restricted from using this data for non-business purposes. We regularly update our security systems to better protect your data. All of our staff have been trained in cyber security and data protection from intruders. We keep back-up copies of your data. We comply with EU laws on the use and storage of your data. ( As of 26.03.2023 the account system is not available and is under development).
+			</p>
+			<p>
+			<b>5. Changes to the Privacy Policy</b>
+			<p>
+			We may update our Privacy Policy from time to time. We will notify you of changes by posting the new version of the Privacy Policy on this page.
+			</p>
+			<p>
+			<b>Support</b>
+			</p> 
+			<p> 
+			If you have any questions about the Privacy Policy or others contact us: worktriadacommunity@gmail.com.
+			</p>
+
+        </div>
+        <div class="language-buttons">
+            <button class="language-button" onclick="changeLanguage('en')">English(USA)</button>
+            <button class="language-button" onclick="changeLanguage('ru')">Русский</button>
+            <button class="language-button" onclick="changeLanguage('uk')">Українська</button>
+            <button class="language-button" onclick="changeLanguage('fr')">Français</button>
+            <button class="language-button" onclick="changeLanguage('pt')">Português</button>
+        </div>
+        <a href="https://bitenot.github.io/terms-of-use" target="_blank" class="external-link-button">Terms Of Use</a>
+    </div>
+
+    <script>
+        const languages = {
+            'en': {
+                text: `
+            <p>
+                The Privacy Policy explains how we collect, use, disclose, share and protect your personal information.
+            </p>
+			<p>
+			<b>1. Collection of Information</b>
+			</p>
+			<p>
+			We may collect different types of information to provide and improve our projects. This includes information you provide to us directly, as well as data about your interactions with our services. We may store information about your email as part of your account registration, to store data about your use of our apps and bots, so that you don't lose anything you've done in the course of your use. We may store your phone number if you choose to link your account to your phone. We store your password for your account on our website. ( this site is currently under development )
+			</p>
+			<p>
+			<b>2. Uses of the information</b>
+			</p>
+			<p>
+			We use the information we collect to provide, support, analyze and improve our services. We may also use this information for you personally. The information we collect helps us develop our application based on your preferences.
+			</p>
+			<p>
+			<b>3. Disclosure of information</b>
+			</p>
+			<p>
+			We do not sell, trade or share your personal information with third parties without your consent, except as described in this Privacy Policy.
+			</p>
+			<p>
+			<b>4. Security</b>
+			</p>
+			<p>
+			We take all necessary steps to ensure the security of your personal information. We provide access to some of your data only to those employees who have a business need to know it. These employees are completely restricted from using this data for non-business purposes. We regularly update our security systems to better protect your data. All of our staff have been trained in cyber security and data protection from intruders. We keep back-up copies of your data. We comply with EU laws on the use and storage of your data. ( As of 26.03.2023 the account system is not available and is under development).
+			</p>
+			<p>
+			<b>5. Changes to the Privacy Policy</b>
+			<p>
+			We may update our Privacy Policy from time to time. We will notify you of changes by posting the new version of the Privacy Policy on this page.
+			</p>
+			<p>
+			<b>Support</b>
+			</p> 
+			<p> 
+			If you have any questions about the Privacy Policy or others contact us: worktriadacommunity@gmail.com.
+			</p>
+                `
+            },
+            'ru': {
+                text: `
+                    <p>
+                Политика конфиденциальности объясняет, как мы собираем, используем, раскрываем, передаем и защищаем вашу личную информацию.
+            </p>
+			<p>
+			<b>1. Сбор информации</b>
+			</p>
+			<p>
+			Мы можем собирать различные виды информации для предоставления и улучшения наших проектов. К ней относится информация, которую вы предоставляете нам напрямую, а также данные о вашем взаимодействии с нашими услугами. Мы можем хранить информацию о вашей электронной почте в процессе регистрации учетной записи для хранения данных о вашем использовании наших приложений и ботов, чтобы не потерять все, что вы сделали в процессе работы. Мы можем хранить номер вашего телефона, если вы решите связать свою учетную запись с телефоном. Мы храним пароль от вашей учетной записи на нашем сайте. (В настоящее время этот сайт находится в стадии разработки).
+			</p>
+			<p>
+			<b>2. Использование информации</b>
+			</p>
+			<p>
+			Мы используем собранную нами информацию для предоставления, поддержки, анализа и улучшения наших услуг. Мы также можем использовать эту информацию для вас лично. Собираемая нами информация помогает нам разрабатывать наши приложения в соответствии с вашими предпочтениями. 
+			</p>
+			<p>
+			<b>3. Разглашение информации</b>
+			</p>
+			<p>
+			Мы не продаем, не обмениваем и не передаем Вашу личную информацию третьим лицам без Вашего согласия, за исключением случаев, описанных в настоящей Политике конфиденциальности.
+			</p>
+			<p>
+			<b>4. Безопасность данных</b>
+			</p>
+			<p>
+			Мы принимаем все необходимые меры для обеспечения безопасности вашей личной информации. Мы предоставляем доступ к некоторой части вашей информации только тем сотрудникам, которые имеют деловую необходимость знать ее. Этим сотрудникам полностью запрещено использовать эти данные в неслужебных целях. Мы регулярно обновляем наши системы безопасности для более надежной защиты ваших данных. Все наши сотрудники проходят обучение по вопросам кибербезопасности и защиты ваших данных от злоумышленников. Мы храним резервные копии ваших данных. Мы соблюдаем законы ЕС об использовании и хранении ваших данных. (По состоянию на 3/26/2023 система счетов недоступна и находится в стадии разработки).
+			</p>
+			<p>
+			<b>5. Изменения в Политике конфиденциальности</b>
+			<p>
+			Мы можем время от времени обновлять нашу Политику конфиденциальности. Мы будем уведомлять вас об изменениях, публикуя новую версию Политики конфиденциальности на этой странице.
+			</p>
+			<p>
+			<b>Поддержка</b>
+			</p> 
+			<p> 
+			Если у Вас возникнут вопросы по Политике конфиденциальности или по другим вопросам, пожалуйста, свяжитесь с нами: worktriadacommunity@gmail.com.
+			</p>
+                `
+            },
+            'uk': {
+                text: `
+            <p>
+                Політика конфіденційності пояснює, як ми збираємо, використовуємо, розкриваємо, передаємо та захищаємо вашу особисту інформацію.
+            </p>
+			<p>
+			<b>1. Збір інформації</b>
+			</p>
+			<p>
+			Ми можемо збирати різні типи інформації, щоб надавати та покращувати наші проекти. Сюди входить інформація, яку ви надаєте нам безпосередньо, а також дані про вашу взаємодію з нашими сервісами. Ми можемо зберігати інформацію про вашу електронну пошту під час процесу реєстрації облікового запису, щоб зберігати дані про використання вами наших додатків і ботів, щоб ми не втратили все, що ви робили в процесі. Ми можемо зберігати ваш номер телефону, якщо ви вирішите прив'язати свій акаунт до свого телефону. Ми зберігаємо пароль вашого облікового запису на нашому веб-сайті. (Наразі цей сайт знаходиться на стадії розробки).
+			</p>
+			<p>
+			<b>2. Використання інформації</b>
+			</p>
+			<p>
+			Ми використовуємо зібрану нами інформацію для надання, підтримки, аналізу та покращення наших послуг. Ми також можемо використовувати цю інформацію для вас особисто. Інформація, яку ми збираємо, допомагає нам розробляти наші додатки відповідно до ваших інтересів. 
+			</p>
+			<p>
+			<b>3. Розповсюдження інформації</b>
+			</p>
+			<p>
+			Ми не продаємо, не обмінюємо і не передаємо вашу особисту інформацію третім особам без вашої згоди, за винятком випадків, описаних в цій Політиці конфіденційності.
+			</p>
+			<p>
+			<b>4. Безпека даних</b>
+			</p>
+			<p>
+			Ми вживаємо всіх необхідних заходів для забезпечення безпеки вашої особистої інформації. Ми надаємо доступ до деякої вашої інформації тільки тим співробітникам, яким вона необхідна для ведення бізнесу. Цим співробітникам повністю заборонено використовувати ці дані в неділових цілях. Ми регулярно оновлюємо наші системи безпеки для кращого захисту ваших даних. Всі наші співробітники проходять навчання з кібербезпеки та захисту ваших даних від зловмисників. Ми зберігаємо резервні копії ваших даних. Ми дотримуємося законів ЄС щодо використання та зберігання ваших даних. (Станом на 26.03.2013 система облікових записів недоступна і знаходиться в стадії розробки).
+			</p>
+			<p>
+			<b>5. Зміни Політики конфіденційності</b>
+			<p>
+			Ми можемо час від часу оновлювати нашу Політику конфіденційності. Ми повідомимо вас про зміни, розмістивши нову версію Політики конфіденційності на цій сторінці.
+			</p>
+			<p>
+			<b>Підтримка</b>
+			</p> 
+			<p> 
+			Якщо у вас виникли запитання щодо Політики конфіденційності або з інших питань, будь ласка, зв'яжіться з нами: worktriadacommunity@gmail.com.
+			</p>
+                `
+            },
+            'fr': {
+                text: `
+            <p>
+			La politique de confidentialité explique comment nous collectons, utilisons, divulguons, partageons et protégeons vos informations personnelles.
+            </p>
+			<p>
+			<b>1. Collecte d'informations</b>
+			</p>
+			<p>
+			Nous pouvons collecter différents types d'informations pour fournir et améliorer nos projets. Il s'agit notamment des informations que vous nous fournissez directement, ainsi que des données relatives à vos interactions avec nos services. Nous pouvons stocker vos informations de courrier électronique au cours du processus d'enregistrement du compte pour stocker des données sur votre utilisation de nos applications et bots afin de ne pas perdre tout ce que vous avez fait au cours du processus. Nous pouvons stocker votre numéro de téléphone si vous choisissez de lier votre compte à votre téléphone. Nous conservons le mot de passe de votre compte sur notre site web. (Ce site est actuellement en cours de développement).
+			</p>
+			<p>
+			<b>2. utilisation des informations</b>
+			</p>
+			<p>
+			Nous utilisons les informations que nous recueillons pour fournir, soutenir, analyser et améliorer nos services. Nous pouvons également utiliser ces informations à des fins personnelles. Les informations que nous recueillons nous aident à développer nos applications en fonction de vos préférences. 
+			</p>
+			<p>
+			<b>3. Divulgations</b>
+			</p>
+			<p>
+			Nous ne vendons pas, n'échangeons pas et ne partageons pas vos informations personnelles avec des tiers sans votre consentement, sauf dans les cas décrits dans la présente politique de confidentialité.
+			</p>
+			<p>
+			<b>4. Sécurité</b>
+			</p>
+			<p>
+			Nous prenons toutes les mesures nécessaires pour garantir la sécurité de vos informations personnelles. Nous ne donnons accès à certaines de vos informations qu'aux employés qui ont besoin de les connaître pour des raisons professionnelles. Il est totalement interdit à ces employés d'utiliser ces données à des fins non professionnelles. Nous mettons régulièrement à jour nos systèmes de sécurité pour mieux protéger vos données. Tous nos employés sont formés à la cybersécurité et à la protection de vos données contre les intrus. Nous conservons des copies de sauvegarde de vos données. Nous respectons les lois de l'UE sur l'utilisation et le stockage de vos données. (Au 26 mars 2023, le système de comptes n'est pas disponible et est en cours de développement).
+			</p>
+			<p>
+			<b>5. Modifications de la politique de confidentialité</b>
+			<p>
+			Nous pouvons mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons des modifications en publiant la nouvelle version de la politique de confidentialité sur cette page.
+			</p>
+			<p>
+			<b>Assistance </b>
+			</p> 
+			<p> 
+			Si vous avez des questions concernant la politique de confidentialité ou d'autres sujets, veuillez nous contacter : worktriadacommunity@gmail.com.
+			</p>
+                `
+            },
+            'pt': {
+                text: `
+            <p>
+                A Política de Privacidade explica como recolhemos, utilizamos, divulgamos, partilhamos e protegemos as suas informações pessoais.
+            </p>
+			<p>
+			<b>1. Recolha de informações</b>
+			</p>
+			<p>
+			Podemos recolher diferentes tipos de informações para fornecer e melhorar os nossos projectos. Isto inclui informações que nos fornece diretamente, bem como dados sobre as suas interacções com os nossos serviços. Podemos armazenar as suas informações de e-mail durante o processo de registo da conta para armazenar dados sobre a sua utilização das nossas aplicações e bots, de modo a não perdermos tudo o que fez durante o processo. Poderemos armazenar o seu número de telefone se optar por associar a sua conta ao seu telefone. Guardamos a palavra-passe da sua conta no nosso sítio Web. (Este sítio está atualmente em desenvolvimento).
+			</p>
+			<p>
+			<b>2. utilização das informações</b>
+			</p>
+			<p>
+			Utilizamos as informações que recolhemos para fornecer, apoiar, analisar e melhorar os nossos serviços. Também podemos utilizar estas informações para o utilizador pessoalmente. As informações que recolhemos ajudam-nos a desenvolver as nossas aplicações de acordo com as suas preferências. 
+			</p>
+			<p>
+			<b>3. Divulgação de informações</b>
+			</p>
+			<p>
+			Não vendemos, trocamos ou partilhamos as suas informações pessoais com terceiros sem o seu consentimento, exceto conforme descrito na presente Política de Privacidade.
+			</p>
+			<p>
+			<b>4. Segurança</b>
+			</p>
+			<p>
+			Tomamos todas as medidas necessárias para garantir a segurança das suas informações pessoais. Fornecemos acesso a algumas das suas informações apenas aos funcionários que têm uma necessidade comercial de as conhecer. Estes funcionários estão completamente proibidos de utilizar estes dados para fins não comerciais. Actualizamos regularmente os nossos sistemas de segurança para proteger melhor os seus dados. Todos os nossos funcionários têm formação em cibersegurança e na forma de proteger os seus dados contra intrusos. Mantemos cópias de segurança dos seus dados. Cumprimos a legislação da UE sobre a utilização e o armazenamento dos seus dados. (A partir de 26/03/2023, o sistema de contas não está disponível e encontra-se em desenvolvimento).
+			</p>
+			<p>
+			<b>5. Alterações à Política de privacidade</b>
+			<p>
+			Podemos atualizar a nossa Política de Privacidade periodicamente. Notificá-lo-emos das alterações, publicando a nova versão da Política de Privacidade nesta página.
+			</p>
+			<p>
+			<b>Apoio</b>
+			</p> 
+			<p> 
+			Se tiver alguma dúvida sobre a Política de Privacidade ou outros assuntos, contacte-nos: worktriadacommunity@gmail.com.
+			</p>
+                `
+            }
+        };
+
+        function changeLanguage(language) {
+            const termsContainer = document.getElementById('terms-container');
+            termsContainer.innerHTML = languages[language].text;
+        }
+
+        // Определение языка системы пользователя
+        const userLanguage = navigator.language || navigator.userLanguage;
+        // Пробуем установить текст на языке системы пользователя
+        if (languages[userLanguage]) {
+            changeLanguage(userLanguage);
+        }
+    </script>
+</body>
+</html>
